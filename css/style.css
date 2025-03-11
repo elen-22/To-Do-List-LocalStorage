@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    border: 2px solid;
+    background-color: lightcyan;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+/* we will create them from js part */
+.task {
+    display: flex;
+    justify-content: space-between;
+    background: lightgray;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+span.complete {
+    text-decoration: line-through;
+}
