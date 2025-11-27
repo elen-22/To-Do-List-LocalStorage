@@ -35,6 +35,7 @@ function displayTasks() {
         li.querySelector(".toggle").addEventListener("click", () => {
             taskManager.toggleTaskCompletion(task.id);
             displayTasks();
+            console.log(taskManager)
         });
 
         li.querySelector(".delete").addEventListener("click", () => {
