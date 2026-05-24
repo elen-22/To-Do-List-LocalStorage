@@ -32,14 +32,17 @@ function displayTasks() {
             </div>
         `;
         //Selects the button with toggle class inside the current li tag
-        li.querySelector(".toggle").addEventListener("click", () => {
+          li.querySelector(".toggle").addEventListener("click", () => {
             taskManager.toggleTaskCompletion(task.id);
             displayTasks();
             console.log(taskManager)
         });
 
         li.querySelector(".delete").addEventListener("click", () => {
-            taskManager.deleteTask(task.id);
+            if(confirm("Are you sure you want to delete the task")){
+                taskManager.deleteTask(task.id);
+            }
+            
             displayTasks();
         });
 

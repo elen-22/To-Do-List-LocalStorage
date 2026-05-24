@@ -17,15 +17,10 @@ export default class Manager{
         this.updateStorage()
     }
     toggleTaskCompletion(id){
-        for(let task of this.tasks){
-            if(task.id==id){
-                //from task class as we have pushed its object to the this.tasks array(handled in getTasks)
-                task.toggleCompletion()
-                //later
-                this.updateStorage();
-                break;
-            }
-        }
+        let foundTask=this.tasks.find((task)=>task.id==id)
+        foundTask.toggleCompletion()
+        console.log(foundTask)
+       this.updateStorage()
     }
     //after every change we should update the localStorage
     updateStorage() {

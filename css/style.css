@@ -13,10 +13,13 @@ body {
 .container {
     width: 400px;
     padding: 20px;
-    border: 2px solid;
-    background-color: lightcyan;
-    border-radius: 5px;
+    background-color: cadetblue;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+h1{
+    color:white;
 }
 
 input {
@@ -34,6 +37,12 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin-top: 8px;
+    cursor:pointer;
+    transition: all 0.4s;
+}
+button:hover{
+    background:#023a75;
+    transform: translateY(-2px);
 }
 
 /* we will create them from js part */
@@ -43,9 +52,42 @@ button {
     background: lightgray;
     margin: 5px 0;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 span.complete {
     text-decoration: line-through;
+}
+li{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   font-size: 30px;
+}
+
+.task button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggle {
+    background: #28a745;
+    color: white;
+}
+
+.delete {
+    background: #dc3545;
+    color: white;
+}
+
+.toggle:hover {
+    background: #218838;
+}
+
+.delete:hover {
+    background: #c82333;
 }
